@@ -14,11 +14,11 @@ pnpm install @tree-sitter/cli --save-dev
 ## Usage
 
 ```js
-import glimmer-javascript from 'grep-parser-glimmer-javascript'
+import glimmerJavascript from 'grep-parser-glimmer-javascript'
 import { registerDynamicLanguage, parse } from '@ast-grep/napi'
 
-registerDynamicLanguage({ glimmer-javascript })
+registerDynamicLanguage({ 'glimmer_javascript': glimmerJavascript })
 
-const sg = parse('glimmer-javascript', `your code`)
+const sg = parse('glimmer_javascript', `your code`)
 sg.root().kind()
 ```

@@ -26,6 +26,6 @@ module.exports = {
     return libPath;
   },
   extensions: ["gjs"],
-  languageSymbol: 'tree_sitter_glimmer-javascript',
+  languageSymbol: 'tree_sitter_glimmer_javascript',
   expandoChar: '$',
 }
